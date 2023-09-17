@@ -1,0 +1,93 @@
+:root {
+    --average-font-size:16px;
+    }
+    
+    body {
+      font-family: "Lato";
+      background: url(../images/ffflux.svg);
+      margin: 0px;
+    }
+    
+    nav {
+      padding: 20px 20px 5px 20px;
+      font-size: var(--average-font-size);
+      background-color: rgb(255, 255, 255);
+    }
+    
+    .logoImg {
+      width: 80px;
+    }
+    
+    #DivDivForLogCreate {
+      height: 93vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .Log-create-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 800px;
+      width: 700px;
+      background-color: white;
+      color: black;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+    
+    .inputSpacing{
+      display: flex;
+      flex-direction: column;
+     font-size: var(--average-font-size);
+      margin-bottom:20px;
+    }
+    input{
+      border-radius: 8px;
+      border: 0.02px solid rgb(230, 229, 229);
+      height: 30px;
+      width: 400px;
+      padding: 6px 12px;
+      margin-top: 4px;
+      font-size: var(--average-font-size);
+    }
+    
+    .labelRed {
+      color: hsl(0, 100%, 67%);
+      visibility: hidden;
+      font-size:var(--average-font-size);
+      margin-bottom: 20px;
+    }
+    
+    .wrongPassword input{
+      border: 0.02px solid red;
+    }
+    .wrongPassword .labelRed {
+      visibility: visible;
+    }
+    
+    
+    .createButton,
+    .loginButton {
+      width: 130px;
+      height: 40px;
+      font-size: var(--average-font-size);
+      font-weight: 400;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      transition: all 0.2s linear;
+      cursor: pointer;
+      border: none;
+      background: rgb(0, 0, 0);
+      color: white;
+      margin-top: 10px;
+    }
+    
+    .createButton:hover,
+    .loginButton:hover {
+      box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+      transform: translateY(-2px);
+      color:#fd9be8
+    }
